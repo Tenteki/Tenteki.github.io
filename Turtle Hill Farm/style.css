@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+html {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+    background: linear-gradient(to top, rgb(193, 206, 219), rgb(56, 119, 61));
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 900px;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+body {
+    margin: 0px,0px,0px,0px;
+    display: -webkit-flex;
+    display: flex;
+    display: -moz-flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 100%;
+    flex: 1 1 auto;
+    margin: 0px auto;
+
+    
+}
+
+main{
+    margin: 0px,0px,0px,0px;
+    display: -webkit-flex;
+    display: flex;
+    display: -moz-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0px auto;
+    width: 100%;
+}
+
+header#header{
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+}
+
+header#header h1{
+    font-family: unifrakturcook;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10em;
+    justify-content: center;
+    text-align: center;
+
+    margin: 0px auto;
+}
+
+#weather {
+    box-shadow: 10px 10px 10px black; 
+}
+
+#time {
+    width:100%;
+    text-align: left;
+    font-size: 2em;
+    border-style: double;
+    color: rgb(255, 255, 255);
+}
+
+div#mainBody{
+    flex-flow: column wrap;
+    text-align: center;
+    font-size: 6em;
+    flex: 1 1 60%;
+    justify-content: center;
+    min-width: 600px;
+}
+
+div#contactInfo{
+    margin-top: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 0 0 40%;
+    min-height: 400px;
+    max-height: 700px;
+    align-content: flex-start;
+    text-align: center;
+}
+section#navigation {
+    display: flex;
+    text-align:center;
+    font-size: 24px;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    flex-flow: row wrap;
+    background-color: rgb(152, 155, 7);
+    height:100%;
+
+}
+
+a {
+    text-decoration: none;
+    flex: 1 1 auto;
+}
+
+section#contactInfo {
+    font-size: 2em;
+    padding: 1 1 10px;
+    border-style: double;
+    border-radius: 5px;
+    flex: 1 1 auto;
+    justify-content: center;
+    background: rgb(204, 204, 204);
+    width: 75%;
+    box-shadow: 10px 10px 10px black;
+}
+
+#googleMap{
+    height: 50%;
+    width: 80%;
+    flex: 1 1 30%;
+    box-shadow: 10px 10px 10px black;
+}
+
+
+img.photo {
+    width: 45%;
+    max-height: 100%;
+    object-fit: contain;
+    box-shadow: 10px 10px 10px black;
+}
+
+footer {
+    text-align: left;
+    width: 100%;
+    flex: 0 1 auto;
+    background-color: beige;
+}
+
+
+.icon {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+
+@media screen and (orientation: portrait) {
+    a {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+   a {
+       display: none;
+   }
+}
