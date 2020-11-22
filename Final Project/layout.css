@@ -27,6 +27,9 @@ header {
     padding-top: 25px;
 }
 
+ol#pageLinks li {
+    list-style-type: none;
+}
 footer {
     min-width: 100%;
 }
