@@ -10,75 +10,136 @@
 
    -->
    <title>Sean Williams IST - 266 Portfolio</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, intial-scale=1">
    <link href="layout.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
    <script src="script.js" defer></script>
 </head>
 <body style="min-height: 100%; top: 0px;">
     <header>
-        <img src="./IanandSean.jpg" alt="Sean and his brother." id="profilePicture" style="float: left;">
-        <section id="contactInformation">
+        <div class="image-container">
+        <img src="./IanandSean.jpg" alt="Sean and his brother." class="image" data-tilt>
+        </div>
+        <section id="contactInformation" style="float: left;">
             <h2 id=myName>Sean Williams</h2>
             <p>864-357-6487 </br>
-            <a href="mailto:ywillise@my.gvltec.edu?subject=Website Development Inquiry">ywillise@my.gvltec.edu</a></p>
+            <a href="mailto:ywillise@my.gvltec.edu?subject=Website Development Inquiry" id="emailAddress">ywillise@my.gvltec.edu</a></p>
         </section>   
-
-
+        <div class="image-container">
+        <img src="./IanandSean2.jpg" alt="Sean and his brother." class="image" data-tilt>
+        </div>
     </header>
     <main>
-        <div id="leftBar">
-            leftBar
-        </div>
+
         <div id="courseLinks">
             <ol id="pageLinks">
                 <li>
-                    <a href="../Chapter 1/ct_start.html" class="webPage">Tutorial 1</a>
+                    <a href="../Chapter 1/ct_start.html" class="webPage" id="webPage">Tutorial 1</a>
                 </li>
                 <li>
-                    <a href="../Chapter 2/tutorial/tss_home.html " class="webPage">Tutorial 2</a>
+                    <a href="../Chapter 2/tutorial/tss_home.html " class="webPage" id="webPage">Tutorial 2</a>
                 </li>
                 <li>
-                    <a href="../Chapter3/pc_home.html" class="webPage">Tutorial 3</a>
+                    <a href="../Chapter3/pc_home.html" class="webPage" id="webPage">Tutorial 3</a>
                 </li>
                 <li>
-                    <a href="../Chapter4 Online/cf_home.html" class="webPage">Tutorial 4</a>
+                    <a href="../Chapter4 Online/cf_home.html" class="webPage" id="webPage">Tutorial 4</a>
                 </li>
                 <li>
-                    <a href="../Chapter 5/tf_home.html" class="webPage">Tutorial 5</a>
+                    <a href="../Chapter 5/tf_home.html" class="webPage" id="webPage">Tutorial 5</a>
                 </li>
                 <li>
-                    <a href="../Chapter 6/dlr_evenings.html" class="webPage">Tutorial 6</a>
+                    <a href="../Chapter 6/dlr_evenings.html" class="webPage" id="webPage">Tutorial 6</a>
                 </li>
                 <li>
-                    <a href="../Chapter 7/rb_survey.html" class="webPage">Tutorial 7</a>
+                    <a href="../Chapter 7/rb_survey.html" class="webPage" id="webPage">Tutorial 7</a>
                 </li>
                 <li>
-                    <a href="../Chapter 8/cp_royal.html" class="webPage">Tutorial 8</a>
+                    <a href="../Chapter 8/cp_royal.html" class="webPage" id="webPage">Tutorial 8</a>
                 </li>
                 <li>
-                    <a href="../Chapter 9/tny_clock.html" class="webPage">Tutorial 9</a>
+                    <a href="../Chapter 9/tny_clock.html" class="webPage" id="webPage">Tutorial 9</a>
                 </li>
                 <li>
-                    <a href="../Chapter 10/lht_august.html" class="webPage">Tutorial 10</a>
+                    <a href="../Chapter 10/lht_august.html" class="webPage" id="webPage1">Tutorial 10</a>
                 </li>
             </ol>
+            
         </div>
-        <div id="surveyForm">
-            <form action="https://formspree.io/f/mgepzjgw" id=request method="post">
-                <div class="formSection">
+        <div id="leftBar">
+            <section id="testBox">
+                <h2 id="testHeader"></h2>
+                <p id="testP"></p>
+            </section>
+        </div>
+        <div id="requestForm">
+            <form action="https://formspree.io/f/mgepzjgw" id="request" method="post">
+                
+                <fieldset class="formSection">
+                    <h1 id="formTitle">Request a Website</h1>
+                    <div class="fieldRow">
                     <label>
-                        Your email:
-                        <input type="text" name="_replyto">
-                    </label>
-                    <button type="submit">Submit</button>
+                        Name*</label>
+                        <input type="text" placeholder="Jane Doe" name="_name" required>
+                    </div>
+                </br>
+                    <div class="fieldRow">
+                    <label>
+                        Your email*</label>
+                        <input type="email" placeholder="example@email.com" name="_replyto" required>
+                    
+                    </div>
+                </br>
+                    <div class="fieldRow">
+                    <label>
+                        Phone number</label> 
+                        <input type="text" name="_phoneNumber" placeholder="(555) 555-5555" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+                    
+                    </div>
+                </br>
+                    <div class="fieldRow">
+                    
+                    <label>
+                        Briefly describe your project.</label>   
+                        <textarea type="text" name="_projectSubmission"></textarea>
+                        </div>
+                    
+                </br>
+                <div class="fieldRow">* indicates a required field.</div>
+                    <!-- <button type="submit" id="submitButton">Submit</button> -->
+                    <!-- <div class="button">
+                        <div class="text">Submit</div>
+                      </div>
+                      <div class="progress-bar"></div>
+                      <svg x="0px" y="0px"
+                         viewBox="0 0 25 30" style="enable-background:new 0 0 25 30;">
+                        <path class="check" class="st0" d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2"/>
+                      </svg> -->
+                      <div id=buttonContainer>
+                      <div class="button">
+                        <div class="text">Submit</div>
+                        
+                        
+                      </div>
+                      <div class="progress-bar">
+                        <svg x="0px" y="0px"
+                     viewBox="0 0 25 30" style="enable-background:new 0 0 25 30;">
+                    <path class="check" class="st0" d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2"/>
+                  </svg>
+                    </div>
                 </div>
+                </fieldset>
             </form>
         </div>
         
 
     </main>
     <footer>
-        November, 21 2020, IST - 266, Greenville Technical College, college address, Lisa Branham
+        <span class="footerElement">November, 21 2020</span> <span>&bull;</span> <span class="footerElement">IST - 226 at Greenville Technical College</span> <span>&bull;</span> <span><address class="footerElement">P.O. Box 5616 Greenville, SC 29606</address></span> <span>&bull;</span> <span class="footerElement">(864) 250-8000</span> <span>&bull;</span> <span class="footerElement">Instructor: Lisa Branham</span>
     </footer>
-
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/tilt.js/dest/tilt.jquery.js"></script>
+    <script src="../node_modules/animejs/lib/anime.min.js"></script>
 </body>
 </html>

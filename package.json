@@ -1,0 +1,28 @@
+{
+  "name": "tenteki.github.io",
+  "version": "1.0.0",
+  "description": "Portfolio for Sean Williams",
+  "main": "script.js",
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "jquery": "^3.5.1",
+    "tilt.js": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tenteki/tenteki.github.io.git"
+  },
+  "keywords": [
+    "Portfolio"
+  ],
+  "author": "Sean Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tenteki/tenteki.github.io/issues"
+  },
+  "homepage": "https://github.com/tenteki/tenteki.github.io#readme"
+}
