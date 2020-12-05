@@ -9,12 +9,14 @@
       Filename:   homePage.html
 
    -->
-   <title>Sean Williams IST - 266 Portfolio</title>
+   <title>Sean Williams IST-266 Portfolio</title>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, intial-scale=1">
    <link href="layout.css" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
    <script src="script.js" defer></script>
+   <script src="lht_calendar.js" defer></script>
+   <script src="lht_events.js" defer></script>
 </head>
 <body style="min-height: 100%; top: 0px;">
     <header>
@@ -23,8 +25,9 @@
         </div>
         <section id="contactInformation" style="float: left;">
             <h2 id=myName>Sean Williams</h2>
-            <p>864-357-6487 </br>
-            <a href="mailto:ywillise@my.gvltec.edu?subject=Website Development Inquiry" id="emailAddress">ywillise@my.gvltec.edu</a></p>
+            <p>864-357-6487 
+            </br>
+            <a href="mailto:ywillise@my.gvltec.edu?subject=Website%Development%Inquiry" id="emailAddress">ywillise@my.gvltec.edu</a></p>
         </section>   
         <div class="image-container">
         <img src="./IanandSean2.jpg" alt="Sean and his brother." class="image" data-tilt>
@@ -107,7 +110,8 @@
                     
                 </br>
                 <div class="fieldRow">* indicates a required field.</div>
-                    <!-- <button type="submit" id="submitButton">Submit</button> -->
+                    <button type="submit" class="mybutton">Submit</button>
+                    <button type="reset" class="mybutton">Reset</button>
                     <!-- <div class="button">
                         <div class="text">Submit</div>
                       </div>
@@ -116,9 +120,9 @@
                          viewBox="0 0 25 30" style="enable-background:new 0 0 25 30;">
                         <path class="check" class="st0" d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2"/>
                       </svg> -->
-                      <div id=buttonContainer>
+                      <!-- <div id=buttonContainer>
                       <div class="button">
-                        <div class="text">Submit</div>
+                        <button type="submit" class="text">Submit</div>
                         
                         
                       </div>
@@ -128,11 +132,12 @@
                     <path class="check" class="st0" d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2"/>
                   </svg>
                     </div>
-                </div>
+                </div> -->
                 </fieldset>
+               
             </form>
-        </div>
-        
+        </div></br>
+        <div id="calendar"></div>
 
     </main>
     <footer>

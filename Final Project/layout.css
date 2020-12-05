@@ -44,6 +44,8 @@ header {
   width: auto;
   margin: auto;
   display: block;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px black;
 }
 
 #contactInformation {
@@ -55,6 +57,11 @@ header {
   height: 100%;
   float: left;
   /* -webkit-text-stroke: 2px rgb(0, 91, 133); */
+}
+
+#emailAddress {
+  color: white;
+  text-decoration: none;
 }
 
 #webPage {
@@ -93,12 +100,15 @@ main {
   min-width: 1016px;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  align-items: left;
+  justify-content: left;
+  /* justify-content: space-around; */
+  padding-bottom: 25px;
 }
 
 #leftBar {
-  width: 33%;
+  width: 30%;
   min-width: 200px;
 }
 
@@ -163,6 +173,8 @@ div.fieldRow > * {
   min-width: 300px;
   margin-top: 10px;
   justify-content: center;
+  padding-top: 35px;
+  /* padding-right: 20px; */
 }
 
 fieldset {
@@ -173,13 +185,14 @@ fieldset {
   background-color: rgb(157, 205, 211);
   border: none;
   border-radius: 10px;
+  box-shadow: 10px 10px 10px black;
 }
 
 div.formSection {
   display: flex;
 }
 
-#submitButton {
+.mybutton {
   background: #0066a2;
 
   color: white;
@@ -279,4 +292,58 @@ svg {
   stroke-width: 3;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+#calendar {
+  min-width: 480px;
+  padding-left: 50px;
+  font-family: san;
+}
+
+#calendar_table {
+  background-color: rgb(231, 231, 231);
+  font-size: 0.9em;
+  /* font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+    "DejaVu Sans", Verdana, sans-serif; */
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+
+  box-shadow: rgb(51, 51, 51) 0px 0px 1px, rgb(51, 51, 51) 0px 0px 5px,
+    rgb(51, 51, 51) 0px 0px 10px, rgb(51, 51, 51) 0px 0px 20px;
+}
+
+#calendar_table caption {
+  caption-side: top;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  padding-bottom: 20px;
+  font-size: 1.6em;
+  letter-spacing: 0.3em;
+}
+
+.calendar_weekdays {
+  background-color: ivory;
+  width: 14.28%;
+  font-size: 1em;
+  border-bottom: 3px solid gray;
+}
+
+.calendar_dates {
+  text-align: left;
+  vertical-align: top;
+  font-size: 0.8em;
+  padding: 3px;
+  border: 1px dotted gray;
+  background-color: white;
+  height: 60px;
+}
+
+#calendar_today {
+  text-align: left;
+  vertical-align: top;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+  background-color: rgb(251, 203, 176);
+  border: 1px solid black;
 }
